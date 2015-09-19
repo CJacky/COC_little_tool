@@ -8,8 +8,6 @@
 </head>
 <body>
 
-
-
 <table>
 	<tr>
 		<td colspan="2"><img id="BarracksA_img"></td>		
@@ -24,111 +22,30 @@
 	</tr>	
 	<tr>
 		<td >level: </td>
-		<td><select id="BarracksA_level" size="1" onchange="change_Barracks_level('A')">
-				<option value=20 >1</option>
-				<option value=25 >2</option>
-				<option value=30 >3</option>
-				<option value=35 >4</option>
-				<option value=40 >5</option>
-				<option value=45 >6</option>
-				<option value=50 >7</option>
-				<option value=55 >8</option>
-				<option value=60 >9</option>
-				<option value=75 selected="selected">10</option>
-		</select></td>
+		<td ><input id="BarracksA_level" type="number" value="10" size="2" min="1" max="10" onchange="change_Barracks_level('A')"></td>
 		
 		<td >level: </td>
-		<td><select id="BarracksB_level" size="1" onchange="change_Barracks_level('B')">
-				<option value="20" >1</option>
-				<option value="25" >2</option>
-				<option value="30" >3</option>
-				<option value="35" >4</option>
-				<option value="40" >5</option>
-				<option value="45" >6</option>
-				<option value="50" >7</option>
-				<option value="55" >8</option>
-				<option value="60" >9</option>
-				<option value="75" selected="selected">10</option>
-		</select></td>
+		<td ><input id="BarracksB_level" type="number" value="10" size="2" min="1" max="10" onchange="change_Barracks_level('B')"></td>
 		
 		<td >level: </td>
-		<td><select id="BarracksC_level" size="1" onchange="change_Barracks_level('C')">
-				<option value="20" >1</option>
-				<option value="25" >2</option>
-				<option value="30" >3</option>
-				<option value="35" >4</option>
-				<option value="40" >5</option>
-				<option value="45" >6</option>
-				<option value="50" >7</option>
-				<option value="55" >8</option>
-				<option value="60" >9</option>
-				<option value="75" selected="selected">10</option>
-		</select></td>
+		<td ><input id="BarracksC_level" type="number" value="10" size="2" min="1" max="10" onchange="change_Barracks_level('C')"></td>
 		
 		<td >level: </td>
-		<td><select id="BarracksD_level" size="1" onchange="change_Barracks_level('D')">
-				<option value="20" >1</option>
-				<option value="25" >2</option>
-				<option value="30" >3</option>
-				<option value="35" >4</option>
-				<option value="40" >5</option>
-				<option value="45" >6</option>
-				<option value="50" >7</option>
-				<option value="55" >8</option>
-				<option value="60" >9</option>
-				<option value="75" selected="selected">10</option>
-		</select></td>
+		<td ><input id="BarracksD_level" type="number" value="10" size="2" min="1" max="10" onchange="change_Barracks_level('D')"></td>
 		
 		<td >level: </td>
-		<td><select id="ArmyCampA_level" size="1" onchange="change_ArmyCamp_level('A')">
-				<option value="20" >1</option>
-				<option value="30" >2</option>
-				<option value="35" >3</option>
-				<option value="40" >4</option>
-				<option value="45" >5</option>
-				<option value="50" >6</option>
-				<option value="55" selected="selected" >7</option>
-				<option value="60" >8</option>
-		</select></td>
+		<td ><input id="ArmyCampA_level" type="number" value="7" size="2" min="1" max="8" onchange="change_ArmyCamp_level('A')"></td>
 		
 		<td >level: </td>
-		<td><select id="ArmyCampB_level" size="1" onchange="change_ArmyCamp_level('B')">
-				<option value="20" >1</option>
-				<option value="30" >2</option>
-				<option value="35" >3</option>
-				<option value="40" >4</option>
-				<option value="45" >5</option>
-				<option value="50" >6</option>
-				<option value="55" selected="selected" >7</option>
-				<option value="60" >8</option>
-		</select></td>
+		<td ><input id="ArmyCampB_level" type="number" value="7" size="2" min="1" max="8" onchange="change_ArmyCamp_level('B')"></td>
 		
 		<td >level: </td>
-		<td><select id="ArmyCampC_level" size="1" onchange="change_ArmyCamp_level('C')">
-				<option value="20" >1</option>
-				<option value="30" >2</option>
-				<option value="35" >3</option>
-				<option value="40" >4</option>
-				<option value="45" >5</option>
-				<option value="50" >6</option>
-				<option value="55" selected="selected" >7</option>
-				<option value="60" >8</option>
-		</select></td>
+		<td> <input id="ArmyCampC_level" type="number" value="7" size="2" min="1" max="8" onchange="change_ArmyCamp_level('C')"></td>
 		
 		<td >level: </td>
-		<td><select id="ArmyCampD_level" size="1" onchange="change_ArmyCamp_level('D')">
-				<option value="20" >1</option>
-				<option value="30" >2</option>
-				<option value="35" >3</option>
-				<option value="40" >4</option>
-				<option value="45" >5</option>
-				<option value="50" >6</option>
-				<option value="55" selected="selected" >7</option>
-				<option value="60" >8</option>
-		</select></td>
+		<td ><input id="ArmyCampD_level" type="number" value="7" size="2" min="1" max="8" onchange="change_ArmyCamp_level('D')"></td>
 	<tr>
 	<tr>
-		<!--td>unit: </td><td><input id="BarracksA_unit" readonly="true" size="2"></td-->
 		<td>unit: </td><td><p id="BarracksA_unit"/></td>
 		<td>unit: </td><td><p id="BarracksB_unit"/></td>
 		<td>unit: </td><td><p id="BarracksC_unit"/></td>
@@ -154,104 +71,35 @@
 		<td colspan="2"><img id="PEKKA_img"   	 ></td>
 	</tr>	
 	<tr>
-		<td >level: </td>
-		<td><select id="Barbarian_level" size="1" onchange="change_Barbarian_level()">
-				<option value="25"  >1</option>
-				<option value="40"  >2</option>
-				<option value="60"  >3</option>
-				<option value="100" >4</option>
-				<option value="150" selected="selected" >5</option>
-				<option value="200" >6</option>
-				<option value="250" >7</option>
-		</select></td>
+		<td>level: </td>
+		<td><input id="Barbarian_level" type="number" value="5" size="1" min="1" max="7" onchange="change_Barbarian_level()"></td>
 		
-		<td >level: </td>
-		<td><select id="Archer_level" size="1" onchange="change_Archer_level()">
-				<option value="50"  >1</option>
-				<option value="80"  >2</option>
-				<option value="120" >3</option>
-				<option value="200" >4</option>
-				<option value="300" selected="selected" >5</option>
-				<option value="400" >6</option>
-				<option value="500" >7</option>
-		</select></td>
+		<td>level: </td>
+		<td><input id="Archer_level" 	type="number" value="5" size="1" min="1" max="7" onchange="change_Archer_level()"></td>
 		
-		<td >level: </td>
-		<td><select id="Giant_level" size="1" onchange="change_Giant_level()">
-				<option value="250"  >1</option>
-				<option value="750"  >2</option>
-				<option value="1250" >3</option>
-				<option value="1750" >4</option>
-				<option value="2250" selected="selected" >5</option>
-				<option value="3000" >6</option>
-				<option value="3500" >7</option>
-		</select></td>
+		<td>level: </td>
+		<td><input id="Giant_level" 	type="number" value="5" size="1" min="1" max="7" onchange="change_Giant_level()"></td>
 		
-		<td >level: </td>
-		<td><select id="Goblin_level" size="1" onchange="change_Goblin_level()">
-				<option value="25"  >1</option>
-				<option value="40"  >2</option>
-				<option value="60"  >3</option>
-				<option value="80"  >4</option>
-				<option value="100" selected="selected">5</option>
-				<option value="150" >6</option>
-		</select></td>
+		<td>level: </td>
+		<td><input id="Goblin_level" 	type="number" value="5" size="1" min="1" max="6" onchange="change_Goblin_level()"></td>
 		
-		<td >level: </td>
-		<td><select id="WallBreaker_level" size="1" onchange="change_WallBreaker_level()">
-				<option value="1000" >1</option>
-				<option value="1500" >2</option>
-				<option value="2000" >3</option>
-				<option value="2500" >4</option>
-				<option value="3000" selected="selected" >5</option>
-				<option value="3500" >6</option>
-		</select></td>
+		<td>level: </td>
+		<td><input id="WallBreaker_level" type="number" value="5" size="1" min="1" max="6" onchange="change_WallBreaker_level()"></td>
 		
-		<td >level: </td>
-		<td><select id="Balloon_level" size="1" onchange="change_Balloon_level()">
-				<option value="2000" >1</option>
-				<option value="2500" >2</option>
-				<option value="3000" >3</option>
-				<option value="3500" >4</option>
-				<option value="4000" selected="selected" >5</option>
-				<option value="4500" >6</option>
-		</select></td>
+		<td>level: </td>
+		<td><input id="Balloon_level" type="number" value="5" size="1" min="1" max="6" onchange="change_Balloon_level()"></td>
 		
-		<td >level: </td>
-		<td><select id="Wizard_level" size="1" onchange="change_Wizard_level()">
-				<option value="1500" >1</option>
-				<option value="2000" >2</option>
-				<option value="2500" >3</option>
-				<option value="3000" >4</option>
-				<option value="3500" selected="selected" >5</option>
-				<option value="4000" >6</option>
-		</select></td>
+		<td>level: </td>
+		<td><input id="Wizard_level" type="number" value="5" size="1" min="1" max="6" onchange="change_Wizard_level()"></td>
 		
-		<td >level: </td>
-		<td><select id="Healer_level" size="1" onchange="change_Healer_level()">
-				<option value="5000"  >1</option>
-				<option value="6000"  >2</option>
-				<option value="8000"  selected="selected">3</option>
-				<option value="10000" >4</option>
-		</select></td>
+		<td>level: </td>
+		<td><input id="Healer_level" type="number" value="3" size="1" min="1" max="4" onchange="change_Healer_level()"></td>
 		
-		<td >level: </td>
-		<td><select id="Dragon_level" size="1" onchange="change_Dragon_level()">
-				<option value="25000" >1</option>
-				<option value="29000" >2</option>
-				<option value="33000" selected="selected">3</option>
-				<option value="37000" >4</option>
-				<option value="42000" >5</option>
-		</select></td>
+		<td>level: </td>
+		<td><input id="Dragon_level" type="number" value="3" size="1" min="1" max="5" onchange="change_Dragon_level()"></td>
 		
-		<td >level: </td>
-		<td><select id="PEKKA_level" size="1" onchange="change_PEKKA_level()">
-				<option value="28000" >1</option>
-				<option value="32000" selected="selected" >2</option>
-				<option value="36000" >3</option>
-				<option value="40000" >4</option>
-				<option value="45000" >5</option>
-		</select></td>
+		<td>level: </td>
+		<td><input id="PEKKA_level" type="number" value="2" size="1" min="1" max="5" onchange="change_PEKKA_level()"></td>
 	</tr>
 	<tr>
 		<td>unit: </td><td><p id="Barbarian_unit" 	>1</p></td>
@@ -278,16 +126,16 @@
 		<td>cost: </td><td><p id="PEKKA_cost" 		/></td>
 	</tr>	
 	<tr>
-		<td>train: </td><td><input id="Barbarian_num" 	type="number" value="0" size="2" min="0" onchange="get_cost_unit()"></td>
-		<td>train: </td><td><input id="Archer_num" 		type="number" value="0" size="2" min="0" onchange="get_cost_unit()"></td>
-		<td>train: </td><td><input id="Giant_num" 		type="number" value="0" size="2" min="0" onchange="get_cost_unit()"></td>
-		<td>train: </td><td><input id="Goblin_num" 		type="number" value="0" size="2" min="0" onchange="get_cost_unit()"></td>
-		<td>train: </td><td><input id="WallBreaker_num"	type="number" value="0" size="2" min="0" onchange="get_cost_unit()"></td>
-		<td>train: </td><td><input id="Balloon_num" 	type="number" value="0" size="2" min="0" onchange="get_cost_unit()"></td>
-		<td>train: </td><td><input id="Wizard_num" 		type="number" value="0" size="2" min="0" onchange="get_cost_unit()"></td>
-		<td>train: </td><td><input id="Healer_num" 		type="number" value="0" size="2" min="0" onchange="get_cost_unit()"></td>
-		<td>train: </td><td><input id="Dragon_num" 		type="number" value="0" size="2" min="0" onchange="get_cost_unit()"></td>
-		<td>train: </td><td><input id="PEKKA_num" 		type="number" value="0" size="2" min="0" onchange="get_cost_unit()"></td>
+		<td>train: </td><td><input id="Barbarian_num" 	type="number" value="0" size="2" min="0" onchange="update_cost_unit_and_elixir()"></td>
+		<td>train: </td><td><input id="Archer_num" 		type="number" value="0" size="2" min="0" onchange="update_cost_unit_and_elixir()"></td>
+		<td>train: </td><td><input id="Giant_num" 		type="number" value="0" size="2" min="0" onchange="update_cost_unit_and_elixir()"></td>
+		<td>train: </td><td><input id="Goblin_num" 		type="number" value="0" size="2" min="0" onchange="update_cost_unit_and_elixir()"></td>
+		<td>train: </td><td><input id="WallBreaker_num"	type="number" value="0" size="2" min="0" onchange="update_cost_unit_and_elixir()"></td>
+		<td>train: </td><td><input id="Balloon_num" 	type="number" value="0" size="2" min="0" onchange="update_cost_unit_and_elixir()"></td>
+		<td>train: </td><td><input id="Wizard_num" 		type="number" value="0" size="2" min="0" onchange="update_cost_unit_and_elixir()"></td>
+		<td>train: </td><td><input id="Healer_num" 		type="number" value="0" size="2" min="0" onchange="update_cost_unit_and_elixir()"></td>
+		<td>train: </td><td><input id="Dragon_num" 		type="number" value="0" size="2" min="0" onchange="update_cost_unit_and_elixir()"></td>
+		<td>train: </td><td><input id="PEKKA_num" 		type="number" value="0" size="2" min="0" onchange="update_cost_unit_and_elixir()"></td>
 	</tr>
 </table>
 
@@ -310,7 +158,7 @@
 
 <br>
 
-<button onclick="get_cost_unit()">Calculate</button>
+<button onclick="calculate()">Calculate</button>
 
 <script>
 change_Barracks_level("A");
@@ -334,7 +182,7 @@ change_Healer_level();
 change_Dragon_level();
 change_PEKKA_level();
 
-get_cost_unit();
+update_cost_unit_and_elixir();
 update_max_army_unit();
 </script>
 
