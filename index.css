@@ -1,0 +1,46 @@
+body
+{
+	background-color : gray;
+	color : white; /* the color of text*/
+	font-size : 20px;
+}
+
+img
+{
+	height : 120px;
+	width : auto;
+}
+
+button
+{
+	
+	font-size : 20px;
+}
+
+input
+{
+	font-size : 20px;
+	width : 65px;
+}
+
+p
+{
+	margin-top: 0px; 
+	margin-bottom: 0px;
+	line-height: 1;
+	font-size : 20px;
+}
+
+table, th, td
+{
+	font-size : 20px;
+	/*width : 100px;*/
+	height : 30px;
+    text-align: left; 
+}
+
+select
+{
+	width : 50px;
+	font-size : 20px;
+}
