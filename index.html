@@ -9,29 +9,14 @@
 <body>
 
 <table>
-	<tr>
-		<td colspan="2"><img id="BarracksA_img"></td>		
-		<td colspan="2"><img id="BarracksB_img"></td>
-		<td colspan="2"><img id="BarracksC_img"></td>
-		<td colspan="2"><img id="BarracksD_img"></td>
-		
+	<tr>		
 		<td colspan="2"><img id="ArmyCampA_img"></td>
 		<td colspan="2"><img id="ArmyCampB_img"></td>
 		<td colspan="2"><img id="ArmyCampC_img"></td>
 		<td colspan="2"><img id="ArmyCampD_img"></td>
 	</tr>	
 	<tr>
-		<td >level: </td>
-		<td ><input id="BarracksA_level" type="number" value="10" size="2" min="1" max="10" onchange="change_Barracks_level('A')"></td>
-		
-		<td >level: </td>
-		<td ><input id="BarracksB_level" type="number" value="10" size="2" min="1" max="10" onchange="change_Barracks_level('B')"></td>
-		
-		<td >level: </td>
-		<td ><input id="BarracksC_level" type="number" value="10" size="2" min="1" max="10" onchange="change_Barracks_level('C')"></td>
-		
-		<td >level: </td>
-		<td ><input id="BarracksD_level" type="number" value="10" size="2" min="1" max="10" onchange="change_Barracks_level('D')"></td>
+
 		
 		<td >level: </td>
 		<td ><input id="ArmyCampA_level" type="number" value="7" size="2" min="1" max="8" onchange="change_ArmyCamp_level('A')"></td>
@@ -46,10 +31,7 @@
 		<td ><input id="ArmyCampD_level" type="number" value="7" size="2" min="1" max="8" onchange="change_ArmyCamp_level('D')"></td>
 	<tr>
 	<tr>
-		<td>unit: </td><td><p id="BarracksA_unit"/></td>
-		<td>unit: </td><td><p id="BarracksB_unit"/></td>
-		<td>unit: </td><td><p id="BarracksC_unit"/></td>
-		<td>unit: </td><td><p id="BarracksD_unit"/></td>
+
 		<td>unit: </td><td><p id="ArmyCampA_unit"/></td>
 		<td>unit: </td><td><p id="ArmyCampB_unit"></td>
 		<td>unit: </td><td><p id="ArmyCampC_unit"/></td>
@@ -157,8 +139,57 @@
 </table>
 
 <br>
+<p>*****************************************************************************************************************************</p>
 
-<button onclick="calculate()">Calculate</button>
+
+<table>
+	<tr>
+		<td colspan="2"><img id="BarracksA_img"></td>		
+	</tr>
+	<tr>
+		<td >level: </td>
+		<td ><input id="BarracksA_level" type="number" value="10" size="2" min="1" max="10" onchange="change_Barracks_level('A')"></td>
+	</tr>
+	<tr>
+		<td>unit: </td><td><p id="BarracksA_unit"/></td>
+	</tr>
+	<!--#############################################################################################################################-->
+	<tr>
+		<td colspan="2"><img id="BarracksB_img"></td>
+	</tr>
+	<tr>
+		<td >level: </td>
+		<td ><input id="BarracksB_level" type="number" value="10" size="2" min="1" max="10" onchange="change_Barracks_level('B')"></td>	
+	</tr>
+	<tr>
+		<td>unit: </td><td><p id="BarracksB_unit"/></td>
+	</tr>
+	<!--#############################################################################################################################-->
+	<tr>
+		<td colspan="2"><img id="BarracksC_img"></td>
+	</tr>
+	<tr>
+		<td >level: </td>
+		<td ><input id="BarracksC_level" type="number" value="10" size="2" min="1" max="10" onchange="change_Barracks_level('C')"></td>	
+	</tr>
+	<tr>
+		<td>unit: </td><td><p id="BarracksC_unit"/></td>
+	</tr>
+	<!--#############################################################################################################################-->
+	<tr>
+		<td colspan="2"><img id="BarracksD_img"></td>
+	</tr>
+	<tr>
+		<td >level: </td>
+		<td ><input id="BarracksD_level" type="number" value="10" size="2" min="1" max="10" onchange="change_Barracks_level('D')"></td>	
+	</tr>
+	<tr>
+		<td>unit: </td><td><p id="BarracksD_unit"/></td>
+	</tr>
+</table>
+<br>
+
+<button onclick="calculate()">Calculate the best train method</button>
 
 <script>
 change_Barracks_level("A");

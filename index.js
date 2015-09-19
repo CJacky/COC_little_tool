@@ -49,7 +49,7 @@ function update_cost_unit_and_elixir()
 
 function calculate()
 {
-	
+	alert("still building...");
 }
 
 function change_Barracks_level(id)
