@@ -2,8 +2,23 @@
 <html>
 <head>
 
-<link rel="stylesheet" type="text/css" href="index.css">
-<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="./scripts/index.css">
+
+<script type="text/javascript" src="./scripts/ArmyCamp.js"></script>
+<script type="text/javascript" src="./scripts/Barracks.js"></script>
+
+<script type="text/javascript" src="./scripts/Barbarian.js"></script>
+<script type="text/javascript" src="./scripts/Archer.js"></script>
+<script type="text/javascript" src="./scripts/Goblin.js"></script>
+<script type="text/javascript" src="./scripts/Giant.js"></script>
+<script type="text/javascript" src="./scripts/WallBreaker.js"></script>
+<script type="text/javascript" src="./scripts/Balloon.js"></script>
+<script type="text/javascript" src="./scripts/Wizard.js"></script>
+<script type="text/javascript" src="./scripts/Healer.js"></script>
+<script type="text/javascript" src="./scripts/Dragon.js"></script>
+<script type="text/javascript" src="./scripts/PEKKA.js"></script>
+
+<script type="text/javascript" src="./scripts/common.js"></script>
 
 </head>
 <body>
@@ -19,16 +34,16 @@
 
 		
 		<td >level: </td>
-		<td ><input id="ArmyCampA_level" type="number" value="7" size="2" min="1" max="8" onchange="change_ArmyCamp_level('A')"></td>
+		<td ><input id="ArmyCampA_level" type="number" onchange="change_ArmyCamp_level('A')"></td>
 		
 		<td >level: </td>
-		<td ><input id="ArmyCampB_level" type="number" value="7" size="2" min="1" max="8" onchange="change_ArmyCamp_level('B')"></td>
+		<td ><input id="ArmyCampB_level" type="number" onchange="change_ArmyCamp_level('B')"></td>
 		
 		<td >level: </td>
-		<td> <input id="ArmyCampC_level" type="number" value="7" size="2" min="1" max="8" onchange="change_ArmyCamp_level('C')"></td>
+		<td> <input id="ArmyCampC_level" type="number" onchange="change_ArmyCamp_level('C')"></td>
 		
 		<td >level: </td>
-		<td ><input id="ArmyCampD_level" type="number" value="7" size="2" min="1" max="8" onchange="change_ArmyCamp_level('D')"></td>
+		<td ><input id="ArmyCampD_level" type="number" onchange="change_ArmyCamp_level('D')"></td>
 	<tr>
 	<tr>
 
@@ -54,34 +69,34 @@
 	</tr>	
 	<tr>
 		<td>level: </td>
-		<td><input id="Barbarian_level" type="number" value="5" size="1" min="1" max="7" onchange="change_Barbarian_level()"></td>
+		<td><input id="Barbarian_level" 	type="number" onchange="change_Barbarian_level()"></td>
 		
 		<td>level: </td>
-		<td><input id="Archer_level" 	type="number" value="5" size="1" min="1" max="7" onchange="change_Archer_level()"></td>
+		<td><input id="Archer_level" 		type="number" onchange="change_Archer_level()"></td>
 		
 		<td>level: </td>
-		<td><input id="Giant_level" 	type="number" value="5" size="1" min="1" max="7" onchange="change_Giant_level()"></td>
+		<td><input id="Giant_level" 		type="number" onchange="change_Giant_level()"></td>
 		
 		<td>level: </td>
-		<td><input id="Goblin_level" 	type="number" value="5" size="1" min="1" max="6" onchange="change_Goblin_level()"></td>
+		<td><input id="Goblin_level" 		type="number" onchange="change_Goblin_level()"></td>
 		
 		<td>level: </td>
-		<td><input id="WallBreaker_level" type="number" value="5" size="1" min="1" max="6" onchange="change_WallBreaker_level()"></td>
+		<td><input id="WallBreaker_level" 	type="number" onchange="change_WallBreaker_level()"></td>
 		
 		<td>level: </td>
-		<td><input id="Balloon_level" type="number" value="5" size="1" min="1" max="6" onchange="change_Balloon_level()"></td>
+		<td><input id="Balloon_level" 		type="number" onchange="change_Balloon_level()"></td>
 		
 		<td>level: </td>
-		<td><input id="Wizard_level" type="number" value="5" size="1" min="1" max="6" onchange="change_Wizard_level()"></td>
+		<td><input id="Wizard_level" 		type="number" onchange="change_Wizard_level()"></td>
 		
 		<td>level: </td>
-		<td><input id="Healer_level" type="number" value="3" size="1" min="1" max="4" onchange="change_Healer_level()"></td>
+		<td><input id="Healer_level" 		type="number" onchange="change_Healer_level()"></td>
 		
 		<td>level: </td>
-		<td><input id="Dragon_level" type="number" value="3" size="1" min="1" max="5" onchange="change_Dragon_level()"></td>
+		<td><input id="Dragon_level" 		type="number" onchange="change_Dragon_level()"></td>
 		
 		<td>level: </td>
-		<td><input id="PEKKA_level" type="number" value="2" size="1" min="1" max="5" onchange="change_PEKKA_level()"></td>
+		<td><input id="PEKKA_level" 		type="number" onchange="change_PEKKA_level()"></td>
 	</tr>
 	<tr>
 		<td>unit: </td><td><p id="Barbarian_unit" 	>1</p></td>
@@ -128,8 +143,8 @@
 		<td>Total train</td>
 		<td><p id="total_unit" style="color:yellow;"/></td>
 		<td> units</td>
-		<td>,max army unit is </td>
-		<td><p id="max_army_unit" style="color:yellow;"/> units</td>
+		<td>,max army capacity is </td>
+		<td><p id="max_capacity" style="color:yellow;"/> units</td>
 	</tr>
 	<tr>
 		<td>Total need </td>
@@ -192,6 +207,21 @@
 <button onclick="calculate()">Calculate the best train method</button>
 
 <script>
+
+initial_Barracks();
+initial_ArmyCamp();
+
+initial_Barbarian();
+initial_Archer();
+initial_Goblin();
+initial_Giant();
+initial_WallBreaker();
+initial_Balloon();
+initial_Wizard();
+initial_Healer();
+initial_Dragon();
+initial_PEKKA();
+
 change_Barracks_level("A");
 change_Barracks_level("B");
 change_Barracks_level("C");
